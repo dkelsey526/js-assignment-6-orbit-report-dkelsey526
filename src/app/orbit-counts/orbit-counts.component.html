@@ -1,9 +1,10 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+	<div *ngIf= "satellites">Total: <span class="counts-total">{{satellites.length}}</span></div>
+	<!-- <div>Total: <span class="counts-total">NaN</span></div> -->
 </div>
 
 <!-- TODO 4: add logic to count number of satellites displayed -->
 <!-- replace the NaN string with a structural directive to indicate how many satellites are on display in the table.
 
-The desired functionality is that the number displayed with change with the number of satellites displayed. -->
+The desired functionality is that the number displayed will change with the number of satellites displayed. -->
